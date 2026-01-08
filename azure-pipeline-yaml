@@ -1,0 +1,12 @@
+# This tells Azure DevOps to run every time you push to the 'main' branch
+trigger:
+- main
+
+# This specifies the type of computer that will run your code
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: |
+    echo "hello sohel welcome to azure devops"
+  displayName: 'Display Greeting Message'
